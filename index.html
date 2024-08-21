@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <h1>Minhas Tarefas</h1>
+
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                Confirmação
+            </div>
+            <div class="modal-body">
+                A tarefa está completa?
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-cancel" id="cancelBtn">Cancelar</button>
+                <button class="btn btn-confirm" id="confirmBtn">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+    <form id="taskForm">
+        <input type="text" id="newTaskTitle" placeholder="Nova tarefa" required>
+        <button type="submit">Adicionar Tarefa</button>
+    </form>
+    <ul id="taskList"></ul>
+
+    <script src="controller/controller.js"></script>
+</body>
+</html>

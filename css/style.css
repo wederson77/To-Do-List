@@ -1,0 +1,144 @@
+/* Configurações globais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+h1 {
+    color: #4A90E2;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+li {
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: baseline;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+.modal-header {
+    font-size: 18px;
+    font-weight: bold;
+}
+.modal-footer {
+    text-align: right;
+}
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-confirm {
+    background-color: #4CAF50;
+    color: white;
+}
+.btn-cancel {
+    background-color: #f44336;
+    color: white;
+}
+li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #a9a9a9;
+}
+
+button {
+    background-color: #4A90E2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+#delete-taks{
+    background-color: orangered;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.4);
+}
+
+button + button {
+    margin-left: 10px;
+}
+
+form {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #4A90E2;
+    box-shadow: inset 0 2px 4px rgba(74, 144, 226, 0.25);
+    outline: none;
+}
